@@ -1,5 +1,6 @@
 package com.java;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -9,7 +10,7 @@ public class DuplicateWords {
 	public static void duplicateWords(String sentense){
 		String[] words = sentense.split(" ");
 		Map<String, Integer> wordsMap = new HashMap<String, Integer>();
-		
+
 		for(String word: words){
 			if(wordsMap.containsKey(word)){
 				wordsMap.put(word, wordsMap.get(word)+1);
